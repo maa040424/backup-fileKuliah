@@ -1,0 +1,21 @@
+.center {
+    display: flex;
+  }
+  
+  .kontrol {
+    border: none;
+    border-radius: 100%;
+    background-color: white;
+    border-color: black;
+    font-size: 50px;
+    margin-left: 50px;
+  }
+  
+  .tembak {
+    border: none;
+    border-radius: 100%;
+    background-color: whitesmoke;
+    border-color: black;
+    font-size: 50px;
+    margin-left: 200px;
+  }

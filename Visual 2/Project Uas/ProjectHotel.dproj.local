@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/05/31 19:02:12.000.253,=C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/05/31 19:13:21.000.990,C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\Unit1.dfm=E:\file kuliah\Visual 2\Project Uas\Umainmenu.dfm</Transaction>
+    <Transaction>2024/05/31 19:13:21.000.990,C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\Unit1.pas=E:\file kuliah\Visual 2\Project Uas\Umainmenu.pas</Transaction>
+    <Transaction>2024/05/31 19:13:29.000.332,C:\Users\ASUS\Documents\Embarcadero\Studio\Projects\Project1.dproj=E:\file kuliah\Visual 2\Project Uas\ProjectHotel.dproj</Transaction>
+    <Transaction>2024/05/31 19:17:15.000.414,=E:\file kuliah\Visual 2\Project Uas\Unit2.pas</Transaction>
+    <Transaction>2024/05/31 19:17:47.000.399,E:\file kuliah\Visual 2\Project Uas\Unit2.pas=E:\file kuliah\Visual 2\Project Uas\Ukamar.pas</Transaction>
+    <Transaction>2024/05/31 19:17:47.000.399,E:\file kuliah\Visual 2\Project Uas\Unit2.dfm=E:\file kuliah\Visual 2\Project Uas\Ukamar.dfm</Transaction>
+    <Transaction>2024/05/31 19:17:54.000.589,=E:\file kuliah\Visual 2\Project Uas\Unit3.pas</Transaction>
+    <Transaction>2024/05/31 19:18:16.000.178,E:\file kuliah\Visual 2\Project Uas\Unit3.pas=E:\file kuliah\Visual 2\Project Uas\Ureservasi.pas</Transaction>
+    <Transaction>2024/05/31 19:18:16.000.178,E:\file kuliah\Visual 2\Project Uas\Unit3.dfm=E:\file kuliah\Visual 2\Project Uas\Ureservasi.dfm</Transaction>
+    <Transaction>2024/05/31 19:18:36.000.923,=E:\file kuliah\Visual 2\Project Uas\Unit4.pas</Transaction>
+    <Transaction>2024/05/31 19:18:53.000.927,E:\file kuliah\Visual 2\Project Uas\Unit4.pas=E:\file kuliah\Visual 2\Project Uas\Upembayaran.pas</Transaction>
+    <Transaction>2024/05/31 19:18:53.000.927,E:\file kuliah\Visual 2\Project Uas\Unit4.dfm=E:\file kuliah\Visual 2\Project Uas\Upembayaran.dfm</Transaction>
+    <Transaction>2024/05/31 19:19:06.000.172,=E:\file kuliah\Visual 2\Project Uas\Unit5.pas</Transaction>
+    <Transaction>2024/05/31 19:19:21.000.002,E:\file kuliah\Visual 2\Project Uas\Unit5.pas=E:\file kuliah\Visual 2\Project Uas\Utamu.pas</Transaction>
+    <Transaction>2024/05/31 19:19:21.000.002,E:\file kuliah\Visual 2\Project Uas\Unit5.dfm=E:\file kuliah\Visual 2\Project Uas\Utamu.dfm</Transaction>
+    <Transaction>2024/05/31 19:19:27.000.180,=E:\file kuliah\Visual 2\Project Uas\Unit6.pas</Transaction>
+    <Transaction>2024/05/31 19:19:41.000.491,E:\file kuliah\Visual 2\Project Uas\Unit6.pas=E:\file kuliah\Visual 2\Project Uas\Ulaporan.pas</Transaction>
+    <Transaction>2024/05/31 19:19:41.000.491,E:\file kuliah\Visual 2\Project Uas\Unit6.dfm=E:\file kuliah\Visual 2\Project Uas\Ulaporan.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

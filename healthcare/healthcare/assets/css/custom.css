@@ -1,0 +1,34 @@
+.btn-success {
+	background-color: #007e85 !important;
+	border-color: #007e85 !important;
+}
+
+.btn-success:hover {
+	background-color:  #036f75 !important;
+	border-color:  #036f75 !important;
+}
+
+.text-success {
+	color: #007e85 !important;
+}
+
+.btn-sm {
+	font-weight: 100 !important;
+}
+
+.navbar-brand-wrapper {
+	background: #fff !important;
+}
+
+label.badge {
+	transition: .2s;
+}
+
+label.badge:hover {
+	transform: scale(1.05);
+}
+
+.paginate_button.page-item.active a {
+	background: #007e85 !important;
+	border-color: #007e85 !important;
+}

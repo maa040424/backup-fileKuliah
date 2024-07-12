@@ -1,0 +1,62 @@
+object Ustok: TUstok
+  Left = 0
+  Top = 0
+  Caption = 'Stok'
+  ClientHeight = 456
+  ClientWidth = 969
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 120
+  TextHeight = 16
+  object Label1: TLabel
+    Left = 80
+    Top = 64
+    Width = 144
+    Height = 33
+    Caption = 'Stok Barang'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object DBGrid1: TDBGrid
+    Left = 80
+    Top = 112
+    Width = 505
+    Height = 233
+    DataSource = DataSource1
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -13
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+  end
+  object ADOToko: TADOConnection
+    Connected = True
+    ConnectionString = 'Provider=MSDASQL.1;Persist Security Info=False;Data Source=toko'
+    LoginPrompt = False
+    Left = 720
+    Top = 232
+  end
+  object DataSource1: TDataSource
+    DataSet = ADOTable1
+    Left = 696
+    Top = 312
+  end
+  object ADOTable1: TADOTable
+    Active = True
+    Connection = ADOToko
+    CursorType = ctStatic
+    TableName = 'stok'
+    Left = 776
+    Top = 296
+  end
+end

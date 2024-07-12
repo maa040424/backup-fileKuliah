@@ -1,0 +1,5 @@
+print("Nama : Muhammad Adam Alghifari")
+print("NPM  : 2210010314")
+fahrenheit = int(input("Masukkan Suhu dalam Fahrenheit : "))
+celcius = 5/9 * (fahrenheit-32)
+print("Suhu dalam Celcius : ", celcius, "Derajat")

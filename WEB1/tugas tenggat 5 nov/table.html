@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel Nota Pembelian</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        th,
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+
+        .footer {
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+
+        ul {
+            list-style-type: disc;
+        }
+
+        .rataKanan {
+            text-align: right;
+        }
+
+        .judul-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        .table-color {
+            color: rgb(255, 255, 255);
+            background-color: rgb(12, 221, 12);
+        }
+    </style>
+</head>
+
+<body>
+<a href="halaman_utama.html"> << Kembali Kehalaman Utama</a>
+    <div>
+        <h1><span class="judul-container">UNISKA Tech</span></h1>
+        <h2>Nota Pembelian</h2>
+    </div>
+    <p>Nomor Nota: A00001</p>
+    <p>Tanggal: 24 Oktober 2023</p>
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Nama Barang</th>
+            <th>Jumlah</th>
+            <th>Harga</th>
+            <th>Sub Total</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Macbook Pro M1</td>
+            <td>2</td>
+            <td>Rp20.000.000</td>
+            <td>Rp40.000.000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mikrotik RB750</td>
+            <td>5</td>
+            <td>Rp900.000</td>
+            <td>Rp4.500.000</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Monitor DELL led 28 inch</td>
+            <td>3</td>
+            <td>Rp4.000.000</td>
+            <td>Rp12.000.000</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Printer Epson L3110</td>
+            <td>3</td>
+            <td>Rp3.300.000</td>
+            <td>Rp9.900.000</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>PC AIO Dell 5420</td>
+            <td>2</td>
+            <td>Rp15.500.000</td>
+            <td>Rp31.000.000</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="rataKanan">Total</td>
+            <td>Rpxx.xxx.xxx</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="rataKanan">Diskon</td>
+            <td>Rp3.500.000</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="rataKanan">DP</td>
+            <td>Rp10.000.000</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="rataKanan"> Total Sisa Pembayaran</td>
+            <td>Rp3.500.000</td>
+        </tr>
+        <tr>
+            <td colspan="5" rowspan="6">Catatan :
+                <ul>
+                    <li>Barang yang rusak dapat ditukar dalam waktu 24 jam</li>
+                    <li>Kerusakan barang akibat user tidak mendapatkan garansi toko</li>
+                    <li>Konsultasi, silakan hubungi teknisi kami</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

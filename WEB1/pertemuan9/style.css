@@ -1,0 +1,40 @@
+h1{
+text-decoration:line-through;
+/* color:blueviolet; */
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: 50px;
+}
+*{
+    /* background-color: violet; */
+}
+a {
+    padding: 15px 30px; 
+    text-decoration: none; color: #ffffff; 
+    border-radius: 12px;
+    box-shadow:rgb(46, 44, 44) 12px 3px;
+}
+
+.fb {
+    background-color: blue;  
+}
+.tw {
+    background-color: rgb(92, 92, 238);  
+}
+
+.box {
+    width: 300px;
+    height: 400px;
+    background-color: blueviolet;
+}
+
+.kotak-bungkus {
+    padding: 15px 30px;
+    border-radius: 20px;
+    color: black;
+    box-shadow: rgb(46, 44, 44) 12px 3px;
+}
+
+.kotak-bungkus .ml {
+    margin-top: 10%;
+    left: 10%;
+}

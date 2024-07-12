@@ -1,0 +1,14 @@
+program ProjectHotel;
+
+uses
+  Vcl.Forms,
+  Umainmenu in 'Umainmenu.pas' {Form1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

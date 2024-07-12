@@ -1,0 +1,27 @@
+unit Ubarangmasuk;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Data.Win.ADODB;
+
+type
+  TFormBarangMasuk = class(TForm)
+    barang_masuk: TADOTable;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormBarangMasuk: TFormBarangMasuk;
+
+implementation
+
+{$R *.dfm}
+
+uses Umenuutama;
+
+end.

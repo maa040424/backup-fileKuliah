@@ -1,0 +1,42 @@
+unit Umainmenu;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ToolWin, Vcl.ActnMan, Vcl.ActnCtrls,
+  Vcl.ActnMenus, Vcl.Menus;
+
+type
+  TForm1 = class(TForm)
+    MainMenu1: TMainMenu;
+    ActionMainMenuBar1: TActionMainMenuBar;
+    kamar: TMenuItem;
+    reservasi: TMenuItem;
+    pembayaran: TMenuItem;
+    tamu: TMenuItem;
+    laporan: TMenuItem;
+    Laporan1: TMenuItem;
+    procedure kamarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.kamarClick(Sender: TObject);
+begin
+  if not Assigned(FormKamar) then // Memeriksa apakah form sudah dibuat sebelumnya
+    FormKamar := TFormKamar.Create(Application); // Jika belum, maka buat instance baru dari form Kamar
+
+  FormKamar.Show; // Menampilkan form Kamar
+end;
+
+end.

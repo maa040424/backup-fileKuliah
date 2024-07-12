@@ -1,0 +1,226 @@
+object FormBarangMasuk: TFormBarangMasuk
+  Left = 0
+  Top = 0
+  Caption = 'Barang Masuk'
+  ClientHeight = 432
+  ClientWidth = 930
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  FormStyle = fsMDIChild
+  OldCreateOrder = False
+  Visible = True
+  WindowState = wsMaximized
+  PixelsPerInch = 120
+  TextHeight = 16
+  object StaticText1: TStaticText
+    Left = 24
+    Top = 24
+    Width = 78
+    Height = 20
+    Caption = 'kode_barang'
+    TabOrder = 0
+  end
+  object StaticText2: TStaticText
+    Left = 24
+    Top = 96
+    Width = 83
+    Height = 20
+    Caption = 'nama_barang'
+    TabOrder = 1
+  end
+  object StaticText3: TStaticText
+    Left = 24
+    Top = 168
+    Width = 78
+    Height = 20
+    Caption = 'jenis_barang'
+    TabOrder = 2
+  end
+  object StaticText4: TStaticText
+    Left = 24
+    Top = 233
+    Width = 43
+    Height = 20
+    Caption = 'jumlah'
+    TabOrder = 3
+  end
+  object StaticText5: TStaticText
+    Left = 24
+    Top = 305
+    Width = 90
+    Height = 20
+    Caption = 'tanggal_masuk'
+    TabOrder = 4
+  end
+  object MaskEdit1: TMaskEdit
+    Left = 24
+    Top = 42
+    Width = 233
+    Height = 24
+    TabOrder = 5
+    Text = ''
+  end
+  object MaskEdit2: TMaskEdit
+    Left = 24
+    Top = 114
+    Width = 233
+    Height = 24
+    TabOrder = 6
+    Text = ''
+  end
+  object MaskEdit3: TMaskEdit
+    Left = 24
+    Top = 186
+    Width = 233
+    Height = 24
+    TabOrder = 7
+    Text = ''
+  end
+  object MaskEdit4: TMaskEdit
+    Left = 24
+    Top = 251
+    Width = 233
+    Height = 24
+    TabOrder = 8
+    Text = ''
+  end
+  object DateTimePicker1: TDateTimePicker
+    Left = 24
+    Top = 323
+    Width = 233
+    Height = 24
+    TabOrder = 9
+  end
+  object Button1: TButton
+    Left = 24
+    Top = 376
+    Width = 75
+    Height = 25
+    Caption = 'Tambah'
+    TabOrder = 10
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 136
+    Top = 376
+    Width = 75
+    Height = 25
+    Caption = 'Simpan'
+    TabOrder = 11
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 248
+    Top = 376
+    Width = 75
+    Height = 25
+    Caption = 'Ubah'
+    TabOrder = 12
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 360
+    Top = 376
+    Width = 75
+    Height = 25
+    Caption = 'Hapus'
+    TabOrder = 13
+    OnClick = Button4Click
+  end
+  object Button5: TButton
+    Left = 472
+    Top = 376
+    Width = 75
+    Height = 25
+    Caption = 'Batal'
+    TabOrder = 14
+    OnClick = Button4Click
+  end
+  object Button6: TButton
+    Left = 584
+    Top = 376
+    Width = 75
+    Height = 25
+    Caption = 'Keluar'
+    TabOrder = 15
+    OnClick = Button4Click
+  end
+  object DBGrid1: TDBGrid
+    Left = 283
+    Top = 42
+    Width = 622
+    Height = 233
+    DataSource = DataSource1
+    TabOrder = 16
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -13
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+  end
+  object ADOToko: TADOConnection
+    Connected = True
+    ConnectionString = 'Provider=MSDASQL.1;Persist Security Info=False;Data Source=toko'
+    Left = 872
+    Top = 344
+  end
+  object ADOTabelBarangMasuk: TADOTable
+    Active = True
+    Connection = ADOToko
+    CursorType = ctStatic
+    TableName = 'barang_masuk'
+    Left = 800
+    Top = 376
+    object ADOTabelBarangMasukid_barang_masuk: TAutoIncField
+      FieldName = 'id_barang_masuk'
+      ReadOnly = True
+    end
+    object ADOTabelBarangMasukkode_barang: TWideStringField
+      FieldName = 'kode_barang'
+      Size = 100
+    end
+    object ADOTabelBarangMasuknama_barang: TWideStringField
+      FieldName = 'nama_barang'
+      Size = 200
+    end
+    object ADOTabelBarangMasukjenis_barang: TWideStringField
+      FieldName = 'jenis_barang'
+      Size = 100
+    end
+    object ADOTabelBarangMasukjumlah: TWideStringField
+      FieldName = 'jumlah'
+      Size = 44
+    end
+    object ADOTabelBarangMasuktanggal_masuk: TDateField
+      FieldName = 'tanggal_masuk'
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = ADOTabelBarangMasuk
+    Left = 704
+    Top = 360
+  end
+  object TabelBarangMasuk: TBindSourceDB
+    DataSource = DataSource1
+    ScopeMappings = <>
+    Left = 736
+    Top = 296
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 836
+    Top = 293
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = TabelBarangMasuk
+      FieldName = 'tanggal_masuk'
+      Control = DateTimePicker1
+      Track = False
+    end
+  end
+end

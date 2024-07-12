@@ -1,0 +1,71 @@
+unit Ustok;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Data.Win.ADODB, Vcl.Grids,
+  Vcl.DBGrids, Vcl.StdCtrls;
+
+type
+  TFormStok = class(TForm)
+    DBGrid1: TDBGrid;
+    dsStok: TDataSource;
+    TableStok: TADOTable;
+    TableStokkode_barang: TWideStringField;
+    TableStoknama_barang: TWideStringField;
+    TableStokjenis_barang: TWideStringField;
+    TableStokstok: TWideStringField;
+    Button1: TButton;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormStok: TFormStok;
+
+implementation
+
+uses Umenuutama, Printers;  // Tambahkan Printers di sini
+
+{$R *.dfm}
+
+procedure TFormStok.Button1Click(Sender: TObject);
+var
+  i, j: Integer;
+  CellText: string;
+  ColWidth, RowHeight: Integer;
+begin
+  Printer.BeginDoc;  // Mulai dokumen pencetakan
+  try
+    // Set ukuran kolom dan baris berdasarkan grid
+    ColWidth := Printer.PageWidth div DBGrid1.Columns.Count;
+    RowHeight := 20;
+
+    // Mencetak header
+    for i := 0 to DBGrid1.Columns.Count - 1 do
+    begin
+      Printer.Canvas.TextOut(i * ColWidth, 0, DBGrid1.Columns[i].Title.Caption);
+    end;
+
+    // Mencetak baris data
+    for j := 0 to DBGrid1.DataSource.DataSet.RecordCount - 1 do
+    begin
+      DBGrid1.DataSource.DataSet.RecNo := j + 1; // Menyesuaikan baris yang akan dicetak
+      for i := 0 to DBGrid1.Columns.Count - 1 do
+      begin
+        CellText := DBGrid1.Columns[i].Field.AsString;
+        Printer.Canvas.TextOut(i * ColWidth, (j + 1) * RowHeight, CellText);
+      end;
+    end;
+
+  finally
+    Printer.EndDoc;  // Selesai dokumen pencetakan
+  end;
+end;
+
+end.
+

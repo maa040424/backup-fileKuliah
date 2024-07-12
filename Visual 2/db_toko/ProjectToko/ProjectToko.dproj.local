@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/03/30 10:38:40.000.244,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/04/19 14:38:04.000.407,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/04/19 17:15:20.000.588,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2024/04/19 18:09:12.000.915,C:\Users\user\Documents\Embarcadero\Studio\Projects\ProjectToko\Umenuutama.dfm=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2024/04/19 18:09:12.000.915,C:\Users\user\Documents\Embarcadero\Studio\Projects\ProjectToko\Umenuutama.pas=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/04/19 18:09:27.000.167,C:\Users\user\Documents\Embarcadero\Studio\Projects\ProjectToko\ProjectToko.dproj=C:\Users\user\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2024/04/19 18:24:44.000.980,=C:\Users\user\Documents\Embarcadero\Studio\Projects\ProjectToko\Unit1.pas</Transaction>
+    <Transaction>2024/04/19 18:25:00.000.774,C:\Users\user\Documents\Embarcadero\Studio\Projects\ProjectToko\Ubarangmasuk.pas=C:\Users\user\Documents\Embarcadero\Studio\Projects\ProjectToko\Unit1.pas</Transaction>
+    <Transaction>2024/04/19 18:25:00.000.774,C:\Users\user\Documents\Embarcadero\Studio\Projects\ProjectToko\Ubarangmasuk.dfm=C:\Users\user\Documents\Embarcadero\Studio\Projects\ProjectToko\Unit1.dfm</Transaction>
+    <Transaction>2024/04/21 06:48:58.000.410,=C:\Users\user\Documents\Embarcadero\Studio\Projects\ProjectToko\Unit1.pas</Transaction>
+    <Transaction>2024/04/21 06:56:21.000.328,C:\Users\user\Documents\Embarcadero\Studio\Projects\ProjectToko\Ubarangkeluar.pas=C:\Users\user\Documents\Embarcadero\Studio\Projects\ProjectToko\Unit1.pas</Transaction>
+    <Transaction>2024/04/21 06:56:21.000.328,C:\Users\user\Documents\Embarcadero\Studio\Projects\ProjectToko\Ubarangkeluar.dfm=C:\Users\user\Documents\Embarcadero\Studio\Projects\ProjectToko\Unit1.dfm</Transaction>
+    <Transaction>2024/04/21 07:42:04.000.107,=C:\Users\user\Documents\Embarcadero\Studio\Projects\ProjectToko\Unit1.pas</Transaction>
+    <Transaction>2024/04/21 07:42:19.000.966,C:\Users\user\Documents\Embarcadero\Studio\Projects\ProjectToko\Ustol.pas=C:\Users\user\Documents\Embarcadero\Studio\Projects\ProjectToko\Unit1.pas</Transaction>
+    <Transaction>2024/04/21 07:42:19.000.966,C:\Users\user\Documents\Embarcadero\Studio\Projects\ProjectToko\Ustol.dfm=C:\Users\user\Documents\Embarcadero\Studio\Projects\ProjectToko\Unit1.dfm</Transaction>
+    <Transaction>2024/04/21 07:42:29.000.167,C:\Users\user\Documents\Embarcadero\Studio\Projects\ProjectToko\Ustok.dfm=C:\Users\user\Documents\Embarcadero\Studio\Projects\ProjectToko\Ustol.dfm</Transaction>
+    <Transaction>2024/04/21 07:42:29.000.167,C:\Users\user\Documents\Embarcadero\Studio\Projects\ProjectToko\Ustok.pas=C:\Users\user\Documents\Embarcadero\Studio\Projects\ProjectToko\Ustol.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Ubarangmasuk.pas"/>
+    <File Path="Ubarangmasuk.dfm"/>
+    <File Path="Umenuutama.pas"/>
+    <File Path="Umenuutama.dfm"/>
+    <File Path="Ubarangkeluar.pas"/>
+    <File Path="Ubarangkeluar.dfm"/>
+    <File Path="Ustok.pas"/>
+    <File Path="Ustok.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>

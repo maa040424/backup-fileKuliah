@@ -1,0 +1,6 @@
+print("Nama : Muhammad Adam Alghifari")
+print("NPM : 2210010314")
+print("Masukan Sisi : ")
+sisi = int(input())
+print("Hasil Luas: ", sisi*sisi)
+print("Hasil Keliling :", sisi*4)

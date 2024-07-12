@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Table
+    </title>
+
+    <link rel="stylesheet" href="css_web_halaman_utama.css">
+</head>
+<body>
+    <div class="navbar">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="Web_halaman_utama.html">Home</a>
+            <a href="Web_profil.html">Profil</a>
+            <a href="Web_tabel.html">Table</a>
+            <a href="Web_form.html">Form</a>
+        </div>
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+        <div class="logo">
+            <a href="Web_halaman_utama.html"><b>[HTML]</b></a>
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <div class="table">
+        <h1 align="center">
+            TABLE NOTA PEMBELIAN
+        </h1>
+
+        <table border="1" cellspacing="0" cellpadding="5" width="800px" align="center">
+            <tr>
+                <td colspan="6">
+                    <center><b><u>UNISKA Tech</u></b><br>Nota Pembelian</center>
+                    Nomer Nota    : A00001<br>
+                    Tanggal       : 30 Oktober 2023<br>
+                    Nama Customer : Muhammad Abdul Jabbar<br>
+                    Nama Kasir    : Budi Ramadhani<br>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" width="40px">No.</td>
+                <td align="center"><b>Nama Barang</b></td>
+                <td align="center"><b>Jumlah</b></td>
+                <td align="center"><b>Harga</b></td>
+                <td align="center"><b>Total</b></td>
+            </tr>
+            <tr>
+                <td align="center" width="40px">1</td>
+                <td align="left">Macbook Pro M1</td>
+                <td align="center">2</td>
+                <td align="right">Rp20.000.000</td>
+                <td align="right">Rp40.000.000</td>
+            </tr>
+            <tr>
+                <td align="center" width="40px">2</td>
+                <td align="left">Mikrotik RB750</td>
+                <td align="center">5</td>
+                <td align="right">Rp900.000</td>
+                <td align="right">Rp4.500.000</td>
+            </tr>
+            <tr>
+                <td align="center" width="40px">3</td>
+                <td align="left">Monitor DELL Led 28 Inch</td>
+                <td align="center">3</td>
+                <td align="right">Rp4.000.000</td>
+                <td align="right">Rp12.000.000</td>
+            </tr>
+            <tr>
+                <td align="center" width="40px">4</td>
+                <td align="left">Printer Epson L3110</td>
+                <td align="center">3</td>
+                <td align="right">Rp3.300.000</td>
+                <td align="right">Rp9.900.000</td>
+            </tr>
+            <tr>
+                <td align="center" width="40px">5</td>
+                <td align="left">PC AIO DELL 5420 </td>
+                <td align="center">2</td>
+                <td align="right">Rp15.500.000</td>
+                <td align="right">Rp31.000.000</td>
+            </tr>
+            <tr>
+                <td colspan="4" align="right"><b>Sub Total</b></td>
+                <td align="right"><b>Rpxx.xxx.xxx</b></td>
+            </tr>
+            <tr>
+                <td colspan="4" align="right"><b>Diskon</b></td>
+                <td align="right"><b>Rp3.500.000</b></td>
+            </tr>
+            <tr>
+                <td colspan="4" align="right"><b>DP</b></td>
+                <td align="right"><b>Rp10.000.000</b></td>
+            </tr>
+            <tr bgcolor="darkgreen">
+                <td colspan="4" align="right"><b>Total Sisa Pembayaran</b></td>
+                <td align="right"><b>Rp3.500.000</b></td>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    <br>
+                    <b>Catatan :</b><br>
+                    - Barang yang rusak ditukar dalam waktu 2x24 Jumlah<br>
+                    - Kerusakan barang akibat user tidak mendapatkan garansi toko<br>
+                    - konsultasi silahkan hubungi teknisi kami<br><br>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

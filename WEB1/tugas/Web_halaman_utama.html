@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Utama</title>
+
+    <link rel="stylesheet" href="css_web_halaman_utama.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="Web_halaman_utama.html"><b>[HTML]</b></a>
+        </div>
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="Web_halaman_utama.html">Home</a>
+            <a href="Web_profil.html">Profil</a>
+            <a href="Web_tabel.html">Table</a>
+            <a href="Web_form.html">Form</a>
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+    <div class="header">
+        <h1 align="center">Tugas Membuat Halaman HTML Sederhana</h1>
+
+        <table border="1" cellspacing="0" cellpadding="10" width="400px" align="center">
+            <tr>
+                <td align="center" colspan="2"><b>DATA PESERTA</b></td>
+            </tr>
+            <tr>
+                <td align="right">NPM :</td>
+                <td>2210010314</td>
+            </tr>
+            <tr>
+                <td align="right">Nama Lengkap :</td>
+                <td>Muhammad Adam Alghifari</td>
+            </tr>
+            <tr>
+                <td align="right">Kelas :</td>
+                <td>TI REG 3B</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

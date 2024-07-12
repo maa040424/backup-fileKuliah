@@ -1,0 +1,136 @@
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+.sidenav {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  bottom: 0; /* Mengubah posisi pop-up navbar ke bagian bawah */
+  left: 0;
+  background-color: #2E86C1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  text-align: center; /* Mengatur teks pada pop-up navbar menjadi rata tengah */
+}
+
+.sidenav-links {
+  display: flex;
+  flex-direction: row; /* Menampilkan tautan dalam satu baris horizontal */
+  justify-content: space-around; /* Membuat tautan terpusat secara horizontal */
+}
+
+.sidenav a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #F4D03F;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #E74C3C; /* Ubah warna teks a pada sidenav saat dihover ke merah */
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.navbar {
+  background-color: #2E86C1;
+  color: #ECF0F1;
+  padding: 10px 10px 10px;
+  overflow: hidden;
+  display: flex; /* Menggunakan flexbox */
+  justify-content: space-between; /* Navbar ditempatkan di sebelah kanan */
+  align-items: center; /* Tengahkan vertikalnya */
+}
+
+
+.header {
+  text-align: center;
+  background-color: #F5B041; /* Ubah warna latar belakang header ke kuning terang */
+  padding: 40px;
+  padding-bottom: 80px;
+}
+
+.navbar .logo {
+  float: right;
+}
+
+.navbar .logo a {
+  color: #ECF0F1; /* Ubah warna teks logo navbar ke putih */
+  font-size: 25px;
+  text-decoration: none;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+.profil-1 {
+  background-color: #F5B041; /* Ubah warna latar belakang profil-1 ke kuning terang */
+  padding: 20px;
+  padding-bottom: 40px;
+}
+
+.profil-1 h1 {
+  color: #E74C3C; /* Ubah warna teks h1 pada profil-1 ke merah */
+  font-family: cursive;
+  font-size: 50px;
+}
+
+.profil-1 h2 {
+  color: #E74C3C; /* Ubah warna teks h2 pada profil-1 ke merah */
+  font-family: cursive;
+  font-size: 25px;
+}
+
+.profil-2 {
+  background-color: #D5DBDB; /* Ubah warna latar belakang profil-2 ke abu-abu muda */
+  padding: 20px;
+  padding-bottom: 40px;
+}
+
+.profil-2 h2 {
+  color: #E74C3C; /* Ubah warna teks h2 pada profil-2 ke merah */
+  font-family: cursive;
+  font-size: 25px;
+}
+
+.profil-3 {
+  background-color: #D35400; /* Ubah warna latar belakang profil-3 ke oranye */
+  padding: 20px;
+  padding-bottom: 40px;
+}
+
+.profil-3 h2 {
+  color: #E74C3C; /* Ubah warna teks h2 pada profil-3 ke merah */
+  font-family: cursive;
+  font-size: 25px;
+}
+
+.table {
+  background-color: #F5B041; /* Ubah warna latar belakang tabel ke kuning terang */
+  padding: 20px;
+  padding-bottom: 40px;
+}
+
+.table h1 {
+  color: #E74C3C; /* Ubah warna teks h1 pada tabel ke merah */
+  font-family: cursive;
+  font-size: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}

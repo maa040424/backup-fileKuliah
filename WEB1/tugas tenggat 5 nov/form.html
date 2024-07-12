@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="halaman_utama.html"> << kembali ke halaman utama </a>
+    <h1>Registrasi Kursus </h1>
+    <table>
+        <tr>
+            <th colspan="2">Biodata</th>
+        </tr>
+        <tr>
+            <td>Nama Lengkap:</td>
+            <td><input type="text" name="nama_lengkap" placeholder="nama lengkap"></td>
+        </tr>
+        <tr>
+            <td>Tempat Tanggal Lahir:</td>
+            <td><input type="text" name="tempat_lahir" placeholder="Tempat Lahir"> <input type="date" name="tanggal_lahir"></td>
+        </tr>
+        <tr>
+            <td>Telepon/Email:</td>
+            <td><input type="text" name="telepon_email" placeholder="08xxxxxxxxx" > <input type="telepon_email" placeholder="example@gmail.com"></td>
+        </tr>
+        <tr>
+            <td>Jenis Kelamin:</td>
+            <td>
+                <input type="radio" name="jenis_kelamin" value="Pria"> Pria
+                <input type="radio" name="jenis_kelamin" value="Wanita"> Wanita
+            </td>
+        </tr>
+        <tr>
+            <td>Pekerjaan:</td>
+            <td>
+                <select name="pekerjaan">
+                    <option value="Mahasiswa">Mahasiswa</option>
+                    <option value="Pegawai">Pegawai</option>
+                    <option value="Wiraswasta">Wiraswasta</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Alamat:</td>
+            <td><textarea name="alamat" rows="3" cols="30"></textarea></td>
+        </tr>
+        <tr>
+            <th colspan="2">Materi Kursus</th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="checkbox" name="materi_kursus[]" value="Aplikasi Office"> Aplikasi Office<br>
+                <input type="checkbox" name="materi_kursus[]" value="Pemrograman Web"> Pemrograman Web<br>
+                <input type="checkbox" name="materi_kursus[]" value="Android"> Android<br>
+                <input type="checkbox" name="materi_kursus[]" value="Desain Grafis"> Desain Grafis
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button type="submit">Simpan</button>
+                <button type="reset">Reset</button>
+            </td>
+    </table>
+</body>
+
+</html>

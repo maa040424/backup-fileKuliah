@@ -1,0 +1,40 @@
+object FormMenuUtama: TFormMenuUtama
+  Left = 0
+  Top = 0
+  Caption = 'TOKO DELPHI'
+  ClientHeight = 523
+  ClientWidth = 752
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  FormStyle = fsMDIForm
+  Menu = MainMenu1
+  Visible = True
+  TextHeight = 15
+  object MainMenu1: TMainMenu
+    Left = 616
+    Top = 24
+    object Papa1: TMenuItem
+      Caption = 'Barang Masuk'
+      OnClick = Papa1Click
+    end
+    object Stok1: TMenuItem
+      Caption = 'Stok'
+      OnClick = Stok1Click
+    end
+    object Stok2: TMenuItem
+      Caption = 'Barang Keluar'
+      OnClick = Stok2Click
+    end
+  end
+  object ADOToko: TADOConnection
+    Connected = True
+    ConnectionString = 'Provider=MSDASQL.1;Persist Security Info=False;Data Source=toko'
+    LoginPrompt = False
+    Left = 576
+    Top = 24
+  end
+end

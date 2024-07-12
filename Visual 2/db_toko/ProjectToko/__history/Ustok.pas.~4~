@@ -1,0 +1,35 @@
+unit Ustok;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Data.Win.ADODB, Vcl.Grids,
+  Vcl.DBGrids;
+
+type
+  TFormStok = class(TForm)
+    DBGrid1: TDBGrid;
+    dsStok: TDataSource;
+    TableStok: TADOTable;
+    TableStokkode_barang: TWideStringField;
+    TableStoknama_barang: TWideStringField;
+    TableStokjenis_barang: TWideStringField;
+    TableStokstok: TWideStringField;
+    PrintDialog1: TPrintDialog;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormStok: TFormStok;
+
+implementation
+
+uses Umenuutama;
+
+{$R *.dfm}
+
+end.

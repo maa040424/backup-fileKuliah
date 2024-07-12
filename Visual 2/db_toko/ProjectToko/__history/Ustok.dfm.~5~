@@ -1,0 +1,94 @@
+object FormStok: TFormStok
+  Left = 0
+  Top = 0
+  Caption = 'Stok'
+  ClientHeight = 276
+  ClientWidth = 733
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  FormStyle = fsMDIChild
+  OldCreateOrder = True
+  Visible = True
+  WindowState = wsMaximized
+  PixelsPerInch = 96
+  TextHeight = 15
+  object DBGrid1: TDBGrid
+    Left = 8
+    Top = 8
+    Width = 717
+    Height = 233
+    DataSource = dsStok
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -12
+    TitleFont.Name = 'Segoe UI'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'kode_barang'
+        Title.Caption = 'Kode Barang'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'nama_barang'
+        Title.Caption = 'Nama Barang'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'jenis_barang'
+        Title.Caption = 'Jenis Barang'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'stok'
+        Title.Caption = 'Stok'
+        Visible = True
+      end>
+  end
+  object Button1: TButton
+    Left = 8
+    Top = 247
+    Width = 75
+    Height = 25
+    Caption = 'Cetak'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object dsStok: TDataSource
+    DataSet = TableStok
+    Left = 664
+    Top = 104
+  end
+  object TableStok: TADOTable
+    Connection = FormMenuUtama.ADOToko
+    CursorType = ctStatic
+    TableName = 'stok'
+    Left = 88
+    Top = 56
+    object TableStokkode_barang: TWideStringField
+      FieldName = 'kode_barang'
+      Size = 25
+    end
+    object TableStoknama_barang: TWideStringField
+      FieldName = 'nama_barang'
+      Size = 50
+    end
+    object TableStokjenis_barang: TWideStringField
+      FieldName = 'jenis_barang'
+      Size = 25
+    end
+    object TableStokstok: TWideStringField
+      FieldName = 'stok'
+      Size = 11
+    end
+  end
+end

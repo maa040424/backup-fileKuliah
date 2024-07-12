@@ -1,0 +1,18 @@
+program ProjectToko;
+
+uses
+  Vcl.Forms,
+  Umenuutama in 'Umenuutama.pas' {FormMenuUtama},
+  Ubarangmasuk in 'Ubarangmasuk.pas' {FormBarangMasuk},
+  Unit1 in 'Unit1.pas' {Ubarangkeluar};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFormMenuUtama, FormMenuUtama);
+  Application.CreateForm(TFormBarangMasuk, FormBarangMasuk);
+  Application.CreateForm(TUbarangkeluar, Ubarangkeluar);
+  Application.Run;
+end.
