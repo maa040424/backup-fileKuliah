@@ -1,3 +1,5 @@
+//btw saya gak paham masalah function ini ya jadi gatau mau jelasin apa 
+//belajar didikan AI ya gini awokawoakwok
 #include <iostream>
 #include <string>
 using namespace std;
