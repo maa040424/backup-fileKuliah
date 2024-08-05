@@ -14,5 +14,5 @@ int main (){
 	} else {
 		cout << "Nilai kamu sangat rendah Belajar lebih giat lagi ya !!!" << endl;
 	}
-	return 0;
+	return 0; 
 }
